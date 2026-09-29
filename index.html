@@ -36,9 +36,6 @@
         .hero-gradient {
             background: linear-gradient(135deg, #1a0000 0%, #4a0000 50%, #0f0505 100%);
         }
-        .gold-glow {
-            box-shadow: 0 0 25px rgba(243, 198, 35, 0.25);
-        }
     </style>
 </head>
 <body class="font-sans bg-garbaDark text-gray-100 min-h-screen selection:bg-garbaGold selection:text-black">
@@ -102,7 +99,7 @@
         </div>
     </section>
 
-    <!-- Event Posters / Gallery Section -->
+    <!-- Event Posters / Gallery Section (Updated with direct img tags) -->
     <section class="py-16 bg-black px-4 border-t border-garbaGold/10">
         <div class="max-w-6xl mx-auto text-center">
             <h2 class="text-2xl sm:text-4xl font-extrabold font-cinzel text-garbaGold mb-3">Official Event Posters</h2>
@@ -110,47 +107,35 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Poster 1 -->
-                <div class="bg-gray-900 border border-garbaGold/30 rounded-2xl overflow-hidden shadow-xl group">
-                    <div class="h-80 bg-gradient-to-br from-garbaRed to-black flex items-center justify-center p-6 relative">
-                        <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('poster1.jpg');"></div>
-                        <div class="relative z-10 text-center">
-                            <i class="fa-solid fa-image text-4xl text-garbaGold mb-2"></i>
-                            <p class="text-xs text-gray-300 font-medium">Main Event Poster</p>
-                        </div>
+                <div class="bg-gray-900 border border-garbaGold/30 rounded-2xl overflow-hidden shadow-xl">
+                    <div class="w-full h-80 bg-gray-950 flex items-center justify-center overflow-hidden">
+                        <img src="poster1.jpg" alt="Main Event Poster" class="w-full h-full object-cover hover:scale-105 transition duration-300">
                     </div>
                     <div class="p-4 text-left">
                         <h4 class="font-bold text-sm text-garbaGold">Jabalpur Garba 2026 Flyer</h4>
-                        <p class="text-xs text-gray-400 mt-1">High-resolution official pass & schedule layout.</p>
+                        <p class="text-xs text-gray-400 mt-1">Main event promotional artwork.</p>
                     </div>
                 </div>
 
                 <!-- Poster 2 -->
-                <div class="bg-gray-900 border border-garbaGold/30 rounded-2xl overflow-hidden shadow-xl group">
-                    <div class="h-80 bg-gradient-to-br from-garbaRed to-black flex items-center justify-center p-6 relative">
-                        <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('poster2.jpg');"></div>
-                        <div class="relative z-10 text-center">
-                            <i class="fa-solid fa-image text-4xl text-garbaGold mb-2"></i>
-                            <p class="text-xs text-gray-300 font-medium">VIP Pass Banner</p>
-                        </div>
+                <div class="bg-gray-900 border border-garbaGold/30 rounded-2xl overflow-hidden shadow-xl">
+                    <div class="w-full h-80 bg-gray-950 flex items-center justify-center overflow-hidden">
+                        <img src="poster2.jpg" alt="VIP Pass Banner" class="w-full h-full object-cover hover:scale-105 transition duration-300">
                     </div>
                     <div class="p-4 text-left">
                         <h4 class="font-bold text-sm text-garbaGold">Couple & Single Entry Banner</h4>
-                        <p class="text-xs text-gray-400 mt-1">Exclusive styling for social media promotion.</p>
+                        <p class="text-xs text-gray-400 mt-1">Exclusive styling for pass categories.</p>
                     </div>
                 </div>
 
                 <!-- Poster 3 -->
-                <div class="bg-gray-900 border border-garbaGold/30 rounded-2xl overflow-hidden shadow-xl group">
-                    <div class="h-80 bg-gradient-to-br from-garbaRed to-black flex items-center justify-center p-6 relative">
-                        <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('poster3.jpg');"></div>
-                        <div class="relative z-10 text-center">
-                            <i class="fa-solid fa-image text-4xl text-garbaGold mb-2"></i>
-                            <p class="text-xs text-gray-300 font-medium">Venue & Timing Guide</p>
-                        </div>
+                <div class="bg-gray-900 border border-garbaGold/30 rounded-2xl overflow-hidden shadow-xl">
+                    <div class="w-full h-80 bg-gray-950 flex items-center justify-center overflow-hidden">
+                        <img src="poster3.jpg" alt="Venue Guide" class="w-full h-full object-cover hover:scale-105 transition duration-300">
                     </div>
                     <div class="p-4 text-left">
-                        <h4 class="font-bold text-sm text-garbaGold">Khalsa College Attractions</h4>
-                        <p class="text-xs text-gray-400 mt-1">Detailed highlights of food stalls and music.</p>
+                        <h4 class="font-bold text-sm text-garbaGold">Khalsa College Highlights</h4>
+                        <p class="text-xs text-gray-400 mt-1">Detailed attractions and venue layout.</p>
                     </div>
                 </div>
             </div>
