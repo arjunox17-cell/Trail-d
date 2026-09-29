@@ -1,277 +1,329 @@
 <!DOCTYPE html>
-<html lang="hi" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>जबलपुर गरबा नाइट 2026 | Jabalpur Garba Night 2026</title>
+    <title>Jabalpur Garba Night 2026 | Official Pass Booking Portal</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- QRCode.js for generating QR code on pass -->
+    <!-- QRCode.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    <!-- html2canvas for downloading pass -->
+    <!-- html2canvas -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        garbaRed: '#990000',
-                        garbaDarkRed: '#660000',
-                        garbaGold: '#FFD700',
-                        garbaOrange: '#FF6600'
+                        garbaRed: '#8B0000',
+                        garbaDark: '#0f0505',
+                        garbaGold: '#F3C623',
+                        garbaOrange: '#E85C0D'
                     },
                     fontFamily: {
-                        poppins: ['Poppins', 'sans-serif'],
-                        rozha: ['Rozha One', 'serif']
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        cinzel: ['Cinzel', 'serif']
                     }
                 }
             }
         }
     </script>
     <style>
-        .festive-bg {
-            background: linear-gradient(135deg, #660000 0%, #990000 50%, #1a0000 100%);
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a0000 0%, #4a0000 50%, #0f0505 100%);
         }
-        .gold-border {
-            border: 2px solid #FFD700;
+        .gold-glow {
+            box-shadow: 0 0 25px rgba(243, 198, 35, 0.25);
         }
     </style>
 </head>
-<body class="font-poppins bg-gray-900 text-gray-100 min-h-screen">
+<body class="font-sans bg-garbaDark text-gray-100 min-h-screen selection:bg-garbaGold selection:text-black">
 
-    <!-- Navbar / Header -->
-    <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-garbaGold/30">
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-garbaGold/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-garbaGold to-garbaOrange flex items-center justify-center text-black font-bold text-xl shadow-lg shadow-garbaGold/30">
-                    <i class="fa-solid fa-fire-flame-curved"></i>
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-garbaGold to-garbaOrange flex items-center justify-center text-black font-extrabold text-xl shadow-lg">
+                    <i class="fa-solid fa-fire"></i>
                 </div>
                 <div>
-                    <h1 class="text-xl sm:text-2xl font-bold text-garbaGold font-rozha">जबलपुर गरबा नाइट 2026</h1>
-                    <p class="text-xs text-gray-300">Jabalpur Garba Night 2026</p>
+                    <h1 class="text-lg sm:text-xl font-extrabold text-garbaGold font-cinzel tracking-wider">JABALPUR GARBA 2026</h1>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">The Ultimate Dandiya Fest</p>
                 </div>
             </div>
             <div>
-                <a href="#booking" class="bg-gradient-to-r from-garbaGold to-garbaOrange text-black font-semibold px-5 py-2.5 rounded-full shadow-lg hover:opacity-95 transition transform hover:scale-105">
-                    <i class="fa-solid fa-ticket mr-2"></i> Book Pass / पास बुक करें
+                <a href="#booking" class="bg-gradient-to-r from-garbaGold to-garbaOrange text-black font-bold px-5 py-2.5 rounded-xl shadow-lg hover:opacity-90 transition transform hover:scale-105 text-sm">
+                    <i class="fa-solid fa-ticket mr-2"></i> Book Pass
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative festive-bg py-16 sm:py-24 px-4 overflow-hidden text-center">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#FFD700_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <section class="relative hero-gradient py-20 sm:py-28 px-4 overflow-hidden text-center">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#F3C623_1px,transparent_1px)] [background-size:20px_20px]"></div>
         <div class="max-w-4xl mx-auto relative z-10">
-            <span class="inline-block bg-garbaGold/20 text-garbaGold text-sm sm:text-base font-semibold px-4 py-1.5 rounded-full border border-garbaGold/40 mb-6">
-                ✨ Official Navratri Celebration 2026 ✨
+            <span class="inline-flex items-center space-x-2 bg-garbaGold/10 text-garbaGold text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full border border-garbaGold/30 mb-6 tracking-wide uppercase">
+                <i class="fa-solid fa-star text-[10px]"></i> <span>Official Navratri Celebration</span> <i class="fa-solid fa-star text-[10px]"></i>
             </span>
-            <h2 class="text-3xl sm:text-6xl font-bold font-rozha text-garbaGold mb-4 leading-tight">
-                आ रहा है साल का सबसे बड़ा डांडिया और गरबा महोत्सव!
+            <h2 class="text-3xl sm:text-6xl font-extrabold font-cinzel text-garbaGold mb-6 leading-tight">
+                Experience the Magic of Rhythm & Devotion
             </h2>
-            <p class="text-base sm:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                Join us for an unforgettable night of traditional music, energetic beats, and divine festive vibes in Jabalpur.
+            <p class="text-base sm:text-lg text-gray-300 mb-10 max-w-2xl mx-auto font-light">
+                Join Jabalpur's most spectacular and vibrant garba night featuring live energetic beats, traditional ambiance, and electrifying festive vibes.
             </p>
 
-            <!-- Event Quick Info Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
-                <div class="bg-black/40 backdrop-blur border border-garbaGold/30 rounded-xl p-4">
+            <!-- Quick Info Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 max-w-3xl mx-auto">
+                <div class="bg-black/50 backdrop-blur-md border border-garbaGold/20 rounded-2xl p-5 text-center">
                     <i class="fa-solid fa-calendar-days text-garbaGold text-2xl mb-2"></i>
-                    <h3 class="font-bold text-lg">11 अक्टूबर 2026</h3>
-                    <p class="text-xs text-gray-400">11th October 2026</p>
+                    <h3 class="font-bold text-base">11th October 2026</h3>
+                    <p class="text-xs text-gray-400">Sunday Celebration</p>
                 </div>
-                <div class="bg-black/40 backdrop-blur border border-garbaGold/30 rounded-xl p-4">
+                <div class="bg-black/50 backdrop-blur-md border border-garbaGold/20 rounded-2xl p-5 text-center">
                     <i class="fa-solid fa-clock text-garbaGold text-2xl mb-2"></i>
-                    <h3 class="font-bold text-lg">शाम 6:00 - रात 12:00</h3>
-                    <p class="text-xs text-gray-400">6:00 PM - 12:00 AM</p>
+                    <h3 class="font-bold text-base">6:00 PM - 12:00 AM</h3>
+                    <p class="text-xs text-gray-400">6 Hours of Non-stop Dance</p>
                 </div>
-                <div class="bg-black/40 backdrop-blur border border-garbaGold/30 rounded-xl p-4">
+                <div class="bg-black/50 backdrop-blur-md border border-garbaGold/20 rounded-2xl p-5 text-center">
                     <i class="fa-solid fa-location-dot text-garbaGold text-2xl mb-2"></i>
-                    <h3 class="font-bold text-lg">खालसा कॉलेज, जबलपुर</h3>
-                    <p class="text-xs text-gray-400">Khalsa College, Jabalpur</p>
+                    <h3 class="font-bold text-base">Khalsa College</h3>
+                    <p class="text-xs text-gray-400">Jabalpur, Madhya Pradesh</p>
                 </div>
             </div>
 
-            <a href="#booking" class="inline-block bg-garbaGold text-black font-bold text-lg px-8 py-4 rounded-xl shadow-2xl hover:bg-yellow-400 transition transform hover:scale-105">
-                अभी अपना पास बुक करें (Book Pass Now)
+            <a href="#booking" class="inline-block bg-garbaGold text-black font-bold text-base px-8 py-4 rounded-xl shadow-xl hover:bg-yellow-400 transition transform hover:scale-105 tracking-wide">
+                Secure Your Passes Now
             </a>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="py-16 bg-black px-4">
-        <div class="max-w-5xl mx-auto text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold font-rozha text-garbaGold mb-4">पास मूल्य (Ticket Pricing)</h2>
-            <p class="text-gray-400 mb-12">Choose your entry pass type / अपने लिए सही पास चुनें</p>
+    <!-- Event Posters / Gallery Section -->
+    <section class="py-16 bg-black px-4 border-t border-garbaGold/10">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-4xl font-extrabold font-cinzel text-garbaGold mb-3">Official Event Posters</h2>
+            <p class="text-gray-400 text-sm mb-10">Get a glimpse of the grand celebration and promotional artworks</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Poster 1 -->
+                <div class="bg-gray-900 border border-garbaGold/30 rounded-2xl overflow-hidden shadow-xl group">
+                    <div class="h-80 bg-gradient-to-br from-garbaRed to-black flex items-center justify-center p-6 relative">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('poster1.jpg');"></div>
+                        <div class="relative z-10 text-center">
+                            <i class="fa-solid fa-image text-4xl text-garbaGold mb-2"></i>
+                            <p class="text-xs text-gray-300 font-medium">Main Event Poster</p>
+                        </div>
+                    </div>
+                    <div class="p-4 text-left">
+                        <h4 class="font-bold text-sm text-garbaGold">Jabalpur Garba 2026 Flyer</h4>
+                        <p class="text-xs text-gray-400 mt-1">High-resolution official pass & schedule layout.</p>
+                    </div>
+                </div>
+
+                <!-- Poster 2 -->
+                <div class="bg-gray-900 border border-garbaGold/30 rounded-2xl overflow-hidden shadow-xl group">
+                    <div class="h-80 bg-gradient-to-br from-garbaRed to-black flex items-center justify-center p-6 relative">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('poster2.jpg');"></div>
+                        <div class="relative z-10 text-center">
+                            <i class="fa-solid fa-image text-4xl text-garbaGold mb-2"></i>
+                            <p class="text-xs text-gray-300 font-medium">VIP Pass Banner</p>
+                        </div>
+                    </div>
+                    <div class="p-4 text-left">
+                        <h4 class="font-bold text-sm text-garbaGold">Couple & Single Entry Banner</h4>
+                        <p class="text-xs text-gray-400 mt-1">Exclusive styling for social media promotion.</p>
+                    </div>
+                </div>
+
+                <!-- Poster 3 -->
+                <div class="bg-gray-900 border border-garbaGold/30 rounded-2xl overflow-hidden shadow-xl group">
+                    <div class="h-80 bg-gradient-to-br from-garbaRed to-black flex items-center justify-center p-6 relative">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('poster3.jpg');"></div>
+                        <div class="relative z-10 text-center">
+                            <i class="fa-solid fa-image text-4xl text-garbaGold mb-2"></i>
+                            <p class="text-xs text-gray-300 font-medium">Venue & Timing Guide</p>
+                        </div>
+                    </div>
+                    <div class="p-4 text-left">
+                        <h4 class="font-bold text-sm text-garbaGold">Khalsa College Attractions</h4>
+                        <p class="text-xs text-gray-400 mt-1">Detailed highlights of food stalls and music.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-16 bg-garbaDark px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-4xl font-extrabold font-cinzel text-garbaGold mb-3">Ticket Pricing Plans</h2>
+            <p class="text-gray-400 text-sm mb-12">Select your category and grab your digital entry pass instantly</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Couple Pass -->
-                <div class="bg-gradient-to-b from-gray-900 to-garbaDarkRed/40 border-2 border-garbaGold rounded-2xl p-8 shadow-xl relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-garbaGold text-black text-xs font-bold px-3 py-1 rounded-bl-lg">BEST VALUE</div>
-                    <i class="fa-solid fa-people-group text-garbaGold text-4xl mb-4"></i>
-                    <h3 class="text-2xl font-bold mb-2">कपल एंट्री (Couple Entry)</h3>
-                    <p class="text-3xl font-extrabold text-garbaGold mb-6">₹600</p>
-                    <ul class="text-sm text-gray-300 space-y-2 mb-6 text-left max-w-xs mx-auto">
-                        <li><i class="fa-solid fa-check text-garbaGold mr-2"></i> Valid for 2 persons (Couple)</li>
-                        <li><i class="fa-solid fa-check text-garbaGold mr-2"></i> Full event access (6 PM - 12 AM)</li>
-                        <li><i class="fa-solid fa-check text-garbaGold mr-2"></i> Digital pass with QR code</li>
+                <div class="bg-gradient-to-b from-gray-900 to-garbaRed/20 border-2 border-garbaGold rounded-3xl p-8 shadow-2xl relative overflow-hidden text-left">
+                    <div class="absolute top-0 right-0 bg-garbaGold text-black text-[10px] font-extrabold px-3 py-1 rounded-bl-xl tracking-wider">MOST POPULAR</div>
+                    <i class="fa-solid fa-users text-garbaGold text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-1">Couple Entry Pass</h3>
+                    <p class="text-3xl font-extrabold text-garbaGold mb-6">₹600 <span class="text-xs font-normal text-gray-400">/ couple</span></p>
+                    <ul class="text-xs text-gray-300 space-y-3 mb-8">
+                        <li><i class="fa-solid fa-circle-check text-garbaGold mr-2"></i> Valid entry for 2 persons</li>
+                        <li><i class="fa-solid fa-circle-check text-garbaGold mr-2"></i> Access to main dance arena (6 PM - 12 AM)</li>
+                        <li><i class="fa-solid fa-circle-check text-garbaGold mr-2"></i> Personalized digital pass with QR code</li>
                     </ul>
-                    <a href="#booking" onclick="setTicketType('Couple')" class="block bg-garbaGold text-black font-bold py-3 rounded-xl hover:bg-yellow-400 transition">Book Couple Pass</a>
+                    <a href="#booking" onclick="setTicketType('Couple')" class="block text-center bg-garbaGold text-black font-bold py-3 rounded-xl hover:bg-yellow-400 transition text-sm">Select Couple Pass</a>
                 </div>
 
                 <!-- Single Pass -->
-                <div class="bg-gradient-to-b from-gray-900 to-gray-800 border border-garbaGold/40 rounded-2xl p-8 shadow-xl">
-                    <i class="fa-solid fa-user text-garbaGold text-4xl mb-4"></i>
-                    <h3 class="text-2xl font-bold mb-2">सिंगल बॉय / गर्ल (Single)</h3>
-                    <p class="text-3xl font-extrabold text-garbaGold mb-6">₹500</p>
-                    <ul class="text-sm text-gray-300 space-y-2 mb-6 text-left max-w-xs mx-auto">
-                        <li><i class="fa-solid fa-check text-garbaGold mr-2"></i> Valid for 1 person</li>
-                        <li><i class="fa-solid fa-check text-garbaGold mr-2"></i> Full event access (6 PM - 12 AM)</li>
-                        <li><i class="fa-solid fa-check text-garbaGold mr-2"></i> Digital pass with QR code</li>
+                <div class="bg-gradient-to-b from-gray-900 to-gray-900 border border-garbaGold/40 rounded-3xl p-8 shadow-2xl text-left">
+                    <i class="fa-solid fa-user text-garbaGold text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-1">Single Boy / Girl Pass</h3>
+                    <p class="text-3xl font-extrabold text-garbaGold mb-6">₹500 <span class="text-xs font-normal text-gray-400">/ person</span></p>
+                    <ul class="text-xs text-gray-300 space-y-3 mb-8">
+                        <li><i class="fa-solid fa-circle-check text-garbaGold mr-2"></i> Valid entry for 1 person</li>
+                        <li><i class="fa-solid fa-circle-check text-garbaGold mr-2"></i> Access to main dance arena (6 PM - 12 AM)</li>
+                        <li><i class="fa-solid fa-circle-check text-garbaGold mr-2"></i> Personalized digital pass with QR code</li>
                     </ul>
-                    <a href="#booking" onclick="setTicketType('Single')" class="block bg-transparent border-2 border-garbaGold text-garbaGold font-bold py-3 rounded-xl hover:bg-garbaGold hover:text-black transition">Book Single Pass</a>
+                    <a href="#booking" onclick="setTicketType('Single')" class="block text-center bg-transparent border border-garbaGold text-garbaGold font-bold py-3 rounded-xl hover:bg-garbaGold hover:text-black transition text-sm">Select Single Pass</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Booking Form Section -->
-    <section id="booking" class="py-16 festive-bg px-4">
-        <div class="max-w-2xl mx-auto bg-black/80 backdrop-blur-md border border-garbaGold/50 rounded-3xl p-6 sm:p-10 shadow-2xl">
+    <section id="booking" class="py-16 hero-gradient px-4">
+        <div class="max-w-2xl mx-auto bg-black/85 backdrop-blur-md border border-garbaGold/40 rounded-3xl p-6 sm:p-10 shadow-2xl">
             <div class="text-center mb-8">
-                <h2 class="text-2xl sm:text-3xl font-bold font-rozha text-garbaGold">ऑनलाइन पास बुकिंग फॉर्म</h2>
-                <p class="text-sm text-gray-300 mt-1">Fill details, upload your photo, and get your instant pass!</p>
+                <h2 class="text-2xl sm:text-3xl font-extrabold font-cinzel text-garbaGold">Online Pass Reservation</h2>
+                <p class="text-xs text-gray-300 mt-1">Fill in your details and upload a photo for your digital entry pass</p>
             </div>
 
-            <form id="passForm" class="space-y-6">
+            <form id="passForm" class="space-y-5 text-left">
                 <div>
-                    <label class="block text-sm font-medium text-garbaGold mb-2">पूरा नाम (Full Name) *</label>
-                    <input type="text" id="fullName" required placeholder="अपना पूरा नाम दर्ज करें" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-garbaGold">
+                    <label class="block text-xs font-semibold text-garbaGold uppercase tracking-wider mb-2">Full Name *</label>
+                    <input type="text" id="fullName" required placeholder="Enter your full name" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-garbaGold">
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-sm font-medium text-garbaGold mb-2">मोबाइल नंबर (Phone Number) *</label>
-                        <input type="tel" id="phone" required placeholder="10 अंकों का मोबाइल नंबर" pattern="[0-9]{10}" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-garbaGold">
+                        <label class="block text-xs font-semibold text-garbaGold uppercase tracking-wider mb-2">Phone Number *</label>
+                        <input type="tel" id="phone" required placeholder="10-digit mobile number" pattern="[0-9]{10}" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-garbaGold">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-garbaGold mb-2">ईमेल आईडी (Email ID)</label>
-                        <input type="email" id="email" placeholder="example@gmail.com" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-garbaGold">
+                        <label class="block text-xs font-semibold text-garbaGold uppercase tracking-wider mb-2">Email Address</label>
+                        <input type="email" id="email" placeholder="name@example.com" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-garbaGold">
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-sm font-medium text-garbaGold mb-2">टिकट प्रकार (Ticket Type) *</label>
-                        <select id="ticketType" onchange="updatePriceDisplay()" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-garbaGold">
+                        <label class="block text-xs font-semibold text-garbaGold uppercase tracking-wider mb-2">Ticket Category *</label>
+                        <select id="ticketType" onchange="updatePriceDisplay()" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-garbaGold">
                             <option value="Couple">Couple Entry - ₹600</option>
                             <option value="Single">Single Boy/Girl - ₹500</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-garbaGold mb-2">पास पर लगाने के लिए फोटो (Photo) *</label>
-                        <input type="file" id="userPhoto" accept="image/*" required class="w-full bg-gray-900 border border-gray-700 rounded-xl px-2 py-2 text-sm text-gray-300 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-garbaGold file:text-black hover:file:bg-yellow-400">
+                        <label class="block text-xs font-semibold text-garbaGold uppercase tracking-wider mb-2">Pass Photo *</label>
+                        <input type="file" id="userPhoto" accept="image/*" required class="w-full bg-gray-900 border border-gray-700 rounded-xl px-2 py-2 text-xs text-gray-300 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-garbaGold file:text-black hover:file:bg-yellow-400">
                     </div>
                 </div>
 
                 <div class="pt-4">
-                    <button type="button" onclick="openPaymentModal()" class="w-full bg-gradient-to-r from-garbaGold to-garbaOrange text-black font-bold text-lg py-4 rounded-xl shadow-lg hover:opacity-95 transition transform hover:scale-[1.02]">
-                        आगे बढ़ें और पेमेंट करें (Proceed to Pay <span id="displayAmount">₹600</span>)
+                    <button type="button" onclick="openPaymentModal()" class="w-full bg-gradient-to-r from-garbaGold to-garbaOrange text-black font-extrabold text-base py-4 rounded-xl shadow-lg hover:opacity-90 transition transform hover:scale-[1.01]">
+                        Proceed to Secure Payment (<span id="displayAmount">₹600</span>)
                     </button>
                 </div>
             </form>
         </div>
     </section>
 
-    <!-- Payment Modal (Simulation) -->
+    <!-- Payment Modal -->
     <div id="paymentModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 hidden px-4">
-        <div class="bg-gray-900 border-2 border-garbaGold rounded-3xl max-w-md w-full p-6 sm:p-8 text-center relative">
+        <div class="bg-gray-900 border-2 border-garbaGold rounded-3xl max-w-sm w-full p-6 sm:p-8 text-center relative shadow-2xl">
             <button onclick="closePaymentModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
-            <h3 class="text-2xl font-bold font-rozha text-garbaGold mb-2">स्कैन करें और पेमेंट करें</h3>
-            <p class="text-sm text-gray-300 mb-6">Scan QR with Google Pay / PhonePe / Paytm</p>
+            <h3 class="text-xl font-bold font-cinzel text-garbaGold mb-1">Scan & Pay</h3>
+            <p class="text-xs text-gray-300 mb-5">Pay via Google Pay / PhonePe / Paytm</p>
             
             <div class="bg-white p-4 rounded-2xl inline-block mb-4 shadow-inner">
-                <!-- Placeholder UPI QR Code image simulation -->
-                <div class="w-48 h-48 bg-gray-200 flex flex-col items-center justify-center text-black font-semibold text-xs border border-gray-400 rounded-lg">
-                    <i class="fa-solid fa-qrcode text-6xl mb-2 text-black"></i>
-                    <span>UPI ID: 8585xxxxxx@paytm</span>
-                    <span class="text-garbaRed font-bold mt-1" id="modalAmountText">₹600</span>
+                <div class="w-44 h-44 bg-gray-100 flex flex-col items-center justify-center text-black font-semibold text-xs border border-gray-300 rounded-xl">
+                    <i class="fa-solid fa-qrcode text-5xl mb-2 text-black"></i>
+                    <span>UPI: 8585xxxxxx@paytm</span>
+                    <span class="text-garbaRed font-extrabold text-sm mt-1" id="modalAmountText">₹600</span>
                 </div>
             </div>
 
-            <p class="text-xs text-gray-400 mb-6">पेमेंट पूरा होने के बाद नीचे दिए गए बटन पर क्लिक करें:</p>
+            <p class="text-[11px] text-gray-400 mb-5">Click below once payment is successfully completed:</p>
 
-            <button onclick="confirmPaymentAndGeneratePass()" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition">
-                <i class="fa-solid fa-circle-check mr-2"></i> मैंने पेमेंट कर दिया है (Payment Done)
+            <button onclick="confirmPaymentAndGeneratePass()" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-xl shadow-lg transition text-sm">
+                <i class="fa-solid fa-circle-check mr-2"></i> Payment Done - Generate Pass
             </button>
         </div>
     </div>
 
-    <!-- Generated Pass Modal / Section -->
+    <!-- Generated Pass Modal -->
     <div id="passModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/95 hidden px-4 overflow-y-auto py-10">
-        <div class="bg-black border-2 border-garbaGold rounded-3xl max-w-md w-full p-6 text-center relative shadow-2xl">
-            <div class="absolute top-4 right-4 flex space-x-2">
+        <div class="bg-black border-2 border-garbaGold rounded-3xl max-w-sm w-full p-6 text-center relative shadow-2xl">
+            <div class="absolute top-4 right-4">
                 <button onclick="closePassModal()" class="text-gray-400 hover:text-white text-xl px-2"><i class="fa-solid fa-xmark"></i></button>
             </div>
 
-            <h3 class="text-2xl font-bold font-rozha text-garbaGold mb-1">🎉 पास सफलतापूर्वक जनरेट हो गया!</h3>
-            <p class="text-xs text-gray-400 mb-4">Digital Entry Pass - Jabalpur Garba 2026</p>
+            <h3 class="text-xl font-bold font-cinzel text-garbaGold mb-1">Pass Generated!</h3>
+            <p class="text-[11px] text-gray-400 mb-4">Jabalpur Garba Night 2026</p>
 
             <!-- Printable Pass Card -->
-            <div id="printablePass" class="bg-gradient-to-b from-gray-900 via-gray-900 to-garbaDarkRed border-2 border-garbaGold rounded-2xl p-5 text-left text-white shadow-xl relative overflow-hidden mb-6">
-                <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl text-garbaGold font-rozha">2026</div>
-                
-                <div class="flex justify-between items-center border-b border-garbaGold/30 pb-3 mb-4">
+            <div id="printablePass" class="bg-gradient-to-b from-gray-900 to-[#520000] border-2 border-garbaGold rounded-2xl p-4 text-left text-white shadow-xl relative overflow-hidden mb-5">
+                <div class="flex justify-between items-center border-b border-garbaGold/30 pb-2.5 mb-3">
                     <div>
-                        <h4 class="font-rozha text-garbaGold text-sm">जबलपुर गरबा नाइट 2026</h4>
-                        <p class="text-[10px] text-gray-300">Khalsa College, Jabalpur</p>
+                        <h4 class="font-cinzel text-garbaGold text-xs font-bold">JABALPUR GARBA 2026</h4>
+                        <p class="text-[9px] text-gray-300">Khalsa College, Jabalpur</p>
                     </div>
-                    <div class="text-right">
-                        <span id="passCategoryBadge" class="bg-garbaGold text-black text-[10px] font-bold px-2.5 py-1 rounded-full">COUPLE</span>
+                    <div>
+                        <span id="passCategoryBadge" class="bg-garbaGold text-black text-[9px] font-extrabold px-2 py-0.5 rounded-full">COUPLE</span>
                     </div>
                 </div>
 
-                <div class="flex items-center space-x-4 mb-4">
-                    <img id="passUserPhoto" src="" alt="User Photo" class="w-20 h-20 object-cover rounded-xl border-2 border-garbaGold shadow-md">
+                <div class="flex items-center space-x-3 mb-3">
+                    <img id="passUserPhoto" src="" alt="User" class="w-16 h-16 object-cover rounded-xl border border-garbaGold shadow">
                     <div>
-                        <p class="text-xs text-gray-400">नाम (Name):</p>
-                        <h5 id="passUserName" class="font-bold text-base text-white">Arjun Thakur</h5>
-                        <p class="text-xs text-gray-400 mt-1">मोबाइल (Phone):</p>
-                        <p id="passUserPhone" class="text-xs font-semibold text-gray-200">8585xxxxxx</p>
+                        <p class="text-[10px] text-gray-400">Name:</p>
+                        <h5 id="passUserName" class="font-bold text-sm text-white">Arjun</h5>
+                        <p class="text-[10px] text-gray-400 mt-0.5">Phone:</p>
+                        <p id="passUserPhone" class="text-[11px] font-semibold text-gray-200">8585xxxxxx</p>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 gap-2 text-xs bg-black/40 p-3 rounded-xl border border-gray-800 mb-4">
+                <div class="grid grid-cols-2 gap-2 text-[10px] bg-black/40 p-2.5 rounded-xl border border-gray-800 mb-3">
                     <div>
-                        <span class="text-gray-400 block">दिनांक (Date):</span>
+                        <span class="text-gray-400 block">Date:</span>
                         <span class="font-bold text-garbaGold">11 Oct 2026</span>
                     </div>
                     <div>
-                        <span class="text-gray-400 block">समय (Time):</span>
+                        <span class="text-gray-400 block">Time:</span>
                         <span class="font-bold text-garbaGold">6 PM - 12 AM</span>
                     </div>
                 </div>
 
-                <div class="flex items-center justify-between pt-2 border-t border-garbaGold/30">
+                <div class="flex items-center justify-between pt-1 border-t border-garbaGold/30">
                     <div>
-                        <p class="text-[10px] text-gray-400">पास नंबर (Pass No):</p>
-                        <p id="passUniqueNo" class="font-mono font-bold text-garbaGold text-sm">JBN-2026-8942</p>
+                        <p class="text-[9px] text-gray-400">Pass Number:</p>
+                        <p id="passUniqueNo" class="font-mono font-bold text-garbaGold text-xs">JBN-2026-0000</p>
                     </div>
-                    <div id="qrcode" class="bg-white p-1 rounded-lg"></div>
+                    <div id="qrcode" class="bg-white p-1 rounded-md"></div>
                 </div>
             </div>
 
-            <!-- Action Buttons -->
-            <div class="space-y-3">
-                <button onclick="downloadPassImage()" class="w-full bg-gradient-to-r from-garbaGold to-garbaOrange text-black font-bold py-3 rounded-xl shadow-lg hover:opacity-95 transition">
-                    <i class="fa-solid fa-download mr-2"></i> पास डाउनलोड करें (Download Pass)
+            <!-- Buttons -->
+            <div class="space-y-2.5">
+                <button onclick="downloadPassImage()" class="w-full bg-gradient-to-r from-garbaGold to-garbaOrange text-black font-bold py-3 rounded-xl shadow-lg hover:opacity-90 transition text-sm">
+                    <i class="fa-solid fa-download mr-2"></i> Download Pass Image
                 </button>
-                <button onclick="closePassModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-gray-300 font-semibold py-2.5 rounded-xl transition text-sm">
-                    होम पेज पर जाएं
+                <button onclick="closePassModal()" class="w-full bg-gray-800 hover:bg-gray-700 text-gray-300 font-semibold py-2 rounded-xl transition text-xs">
+                    Back to Home
                 </button>
             </div>
         </div>
@@ -279,11 +331,11 @@
 
     <!-- Footer -->
     <footer class="bg-black border-t border-garbaGold/20 py-8 text-center text-xs text-gray-500">
-        <p class="text-garbaGold font-medium mb-1">संयोजक / Contact: 8585xxxxxx | khal***arba26@gmail.com</p>
+        <p class="text-garbaGold font-medium mb-1">Inquiries & Support: 8585xxxxxx | khal***arba26@gmail.com</p>
         <p>© 2026 Jabalpur Garba Night. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript Logic -->
+    <!-- JavaScript -->
     <script>
         function setTicketType(type) {
             document.getElementById('ticketType').value = type;
@@ -303,7 +355,7 @@
             const photo = document.getElementById('userPhoto').files[0];
 
             if(!name || !phone || !photo) {
-                alert('कृपया सभी आवश्यक जानकारी भरें और अपनी फोटो अपलोड करें!');
+                alert('Please fill in all required fields and upload your pass photo!');
                 return;
             }
 
@@ -319,13 +371,11 @@
         function confirmPaymentAndGeneratePass() {
             closePaymentModal();
 
-            // Fetch form values
             const name = document.getElementById('fullName').value;
             const phone = document.getElementById('phone').value;
             const type = document.getElementById('ticketType').value;
             const photoFile = document.getElementById('userPhoto').files[0];
 
-            // Populate pass details
             document.getElementById('passUserName').innerText = name;
             document.getElementById('passUserPhone').innerText = phone;
             document.getElementById('passCategoryBadge').innerText = type.toUpperCase() + (type === 'Couple' ? ' (₹600)' : ' (₹500)');
@@ -333,22 +383,19 @@
             generatedPassNo = 'JBN-2026-' + Math.floor(1000 + Math.random() * 9000);
             document.getElementById('passUniqueNo').innerText = generatedPassNo;
 
-            // Load photo preview
             const reader = new FileReader();
             reader.onload = function(e) {
                 document.getElementById('passUserPhoto').src = e.target.result;
             }
             reader.readAsDataURL(photoFile);
 
-            // Generate QR Code
             document.getElementById('qrcode').innerHTML = "";
             new QRCode(document.getElementById("qrcode"), {
                 text: `PassNo: ${generatedPassNo}, Name: ${name}, Phone: ${phone}, Type: ${type}`,
-                width: 64,
-                height: 64
+                width: 56,
+                height: 56
             });
 
-            // Show Pass Modal
             document.getElementById('passModal').classList.remove('hidden');
         }
 
